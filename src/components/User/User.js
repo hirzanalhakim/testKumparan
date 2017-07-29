@@ -1,13 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import { Button } from 'react-bootstrap'
-<<<<<<< HEAD
-<<<<<<< HEAD
-import Modal from 'react-bootstrap/lib/Modal';
-=======
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
-=======
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
+import { Button, Modal } from 'react-bootstrap'
 
 export default class User extends Component {
 	static propTypes = {
@@ -15,8 +8,6 @@ export default class User extends Component {
 		onDelete: PropTypes.func.isRequired,
 		onEdit: PropTypes.func.isRequired,
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -88,25 +79,6 @@ export default class User extends Component {
 					</Modal.Body>
 				</Modal>
 			</tr>
-=======
-=======
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
-	render() {
-		const { id, name, alamat, onEdit, onDelete, index } = this.props
-		return (
-			<tr>
-		        <td>{name}</td>
-		        <td>{alamat}</td>
-		        <th>
-		        	<Button bsStyle="info" onClick={() => onEdit(id) }>Edit</Button>
-		        	&nbsp;&nbsp;
-		        	<Button bsStyle="danger" onClick={() => onDelete(index) }>Delete</Button>
-		        </th>
-		    </tr>
-<<<<<<< HEAD
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
-=======
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
 		);
 	}
 }

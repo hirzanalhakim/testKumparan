@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { Grid } from 'react-bootstrap'
-
-import NavBar from 'components/NavBar/NavBar'
 import UserGrid from 'components/UserGrid/UserGrid'
 import { connect } from 'react-redux';
 import { loadData } from 'redux/modules/user';
@@ -23,12 +21,16 @@ export default class Home extends Component {
     this.props.loadData();
   }
   render() {
+    const style = {
+			paddingTop: '20px',
+			paddingBottom: '20px',
+		}
     const { user } = this.state;
     return (
-      <Grid>
-        <NavBar />
-        <UserGrid list={user}/>
-      </Grid>
+      <div className="container" style={style}>
+          <UserGrid list={user} />
+      </div>
     )
+
   }
 }

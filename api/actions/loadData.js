@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 // export default function loadData(req, res) {
 // console.log(req.query);
 // let page = 0;
@@ -15,19 +13,9 @@
 export default function loadData() {
     return {
         results: 
-=======
-export default function loadData() {
-    return {
-        results:
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
-=======
-export default function loadData() {
-    return {
-        results:
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
         [{
             "id": 1,
-            "alamat": "Komp. Batan Indah",
+            "alamat": "Komp. Batan Indah blok I- 29, Setu, Tangsel",
             "name": "Hirzan Jundi Al Hakim"
         }, {
             "id": 2,
@@ -35,70 +23,68 @@ export default function loadData() {
             "name": "Faris"
         }, {
             "id": 3,
-            "alamat": "Cikeas samping Masjid",
+            "alamat": "22850 W. Elm Street Springfield, MO 65802",
             "name": "Epul"
         }, {
 
             "id": 4,
-            "alamat": "Kelapa Lilin dulunya",
+            "alamat": "Taman Pegangsaan Indah Blok O No. 4 Kelapa Gading, Jakarta 14250",
             "name": "Agung Surya Bangsa"
         }, {
             "id": 5,
-            "alamat": "Gang guan Telinga alias Budeg",
+            "alamat": "Ngumbo, Desa Pager Sari, Kec Kali Dawir, Tulung Agung, Jawa Timur",
             "name": "Komar Pulung"
         }, {
             "id": 6,
-            "alamat": "Jalan Kampung Apaan Tau",
+            "alamat": "Kompleks Larangan Indah Cileduk, Tangerang, Jawa Barat",
             "name": "Abdul"
-<<<<<<< HEAD
-<<<<<<< HEAD
         },
         {
             "id": 7,
-            "alamat": "Komp. Batan Indah",
-            "name": "Hirzan Jundi Al Hakim"
+            "alamat": "Jln. Perkapuran No 1000 Cibubur, Jakarta Timur",
+            "name": "Muhammad Arja"
         }, {
             "id": 8,
-            "alamat": "Komp. Batan Indah",
-            "name": "Faris"
+            "alamat": "Bambang Budidoyo s.d.a Jln. Madni No. 101 Kediri, Jawa Timur",
+            "name": "Ridwan Ramadhan"
         }, {
             "id": 9,
-            "alamat": "Cikeas samping Masjid",
-            "name": "Epul"
+            "alamat": "Desa Pager Sari, Kec Kali Dawir, Tulung Agung, Jawa Timur",
+            "name": "Achmad Dwi"
         }, {
 
             "id": 10,
-            "alamat": "Kelapa Lilin dulunya",
-            "name": "Agung Surya Bangsa"
+            "alamat": "Kp. Cibogo III Ciaranjang, Cianjur, Jawa Barat",
+            "name": "Akbar Kusuma Negara"
         }, {
             "id": 11,
-            "alamat": "Gang guan Telinga alias Budeg",
-            "name": "Komar Pulung"
+            "alamat": "Desa Pager Sari, Kec Kali Dawir, Tulung Agung, Jawa Timur",
+            "name": "Saepul Bongek"
         }, {
             "id": 12,
-            "alamat": "Jalan Kampung Apaan Tau",
-            "name": "Abdul"
+            "alamat": " Surotokunto 82, Rawa Gabus Kerawang 41313, Jawa Barat",
+            "name": "Ridwan Ramadhan"
         }, {
             "id": 13,
-            "alamat": "Komp. Batan Indah",
-            "name": "Faris"
+            "alamat": "Dusun Sido Gede RT01/01, Belitang Ogan Komering Ulu Timur",
+            "name": "Salim"
         }, {
             "id": 14,
-            "alamat": "Cikeas samping Masjid",
-            "name": "Epul"
+            "alamat": "Handoko 304 W. Broad St Apt #3 Quakertown, PA 18951",
+            "name": "Beni"
         }, {
 
             "id": 15,
-            "alamat": "Kelapa Lilin dulunya",
-            "name": "Agung Surya Bangsa"
+            "alamat": "Kompleks Dit. Bek. Ang. Jl. Darma no K2 G2 RT 010/0a",
+            "name": "Feby"
         }, {
             "id": 16,
-            "alamat": "Gang guan Telinga alias Budeg",
-            "name": "Komar Pulung"
+            "alamat": "Jln Dukuh Kupang XXV/7 Surabaya, Jawa Timur",
+            "name": "Ajeng"
         }, {
             "id": 17,
-            "alamat": "Jalan Kampung Apaan Tau",
-            "name": "Abdul"
+            "alamat": "Kesatrian I no 20, Tegal 52111 Jawa Tengah",
+            "name": "Samsul"
         }]
     }
 }
@@ -124,13 +110,3 @@ export default function loadData() {
 //         results
 //     }
 // }
-=======
-        }]
-    }
-}
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
-=======
-        }]
-    }
-}
->>>>>>> 1a39a4c715cd12cb1777cd20381d5c7d41952e08
