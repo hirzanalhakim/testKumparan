@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import User from 'components/User/User'
 import { connect } from 'react-redux';
 import UserHeader from 'components/UserHeader/UserHeader';
-import { Button, Table, Modal } from 'react-bootstrap';
+import { Button, Table, Modal, Pagination } from 'react-bootstrap';
+import { loadData } from 'redux/modules/user';
 
 @connect(
 	state => ({
 		user: state.user
-	})
+	}),
+	{ loadData }
 )
 export default class UserList extends Component {
 	static propTypes = {
@@ -17,6 +19,7 @@ export default class UserList extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
+			activePage: 1,	
 			user: props.user,
 			showInsert: false,
 		};
@@ -61,6 +64,10 @@ export default class UserList extends Component {
 	}
 	close = () => {
 		this.setState({ showInsert: false });
+	}
+	handleSelect = eventKey => {
+		this.props.loadData(eventKey);
+		this.setState({ activePage: eventKey });
 	}
 
 	render() {
@@ -112,6 +119,11 @@ export default class UserList extends Component {
 						</Modal>
 					</tbody>
 				</Table>
+				<Pagination
+					bsSize="large"
+					items={4}
+					activePage={this.state.activePage}
+					onSelect={this.handleSelect} />
 			</div>
 		)
 	}

@@ -10,9 +10,9 @@
 //         limit = req.query.limit
 //     }
 // }
-export default function loadData() {
-    return {
-        results: 
+export default function loadData(req) {
+
+    const data =
         [{
             "id": 1,
             "alamat": "Komp. Batan Indah blok I- 29, Setu, Tangsel",
@@ -86,8 +86,6 @@ export default function loadData() {
             "alamat": "Kesatrian I no 20, Tegal 52111 Jawa Tengah",
             "name": "Samsul"
         }]
-    }
-}
 //     let result = [];
 //     let start = (page*limit)-limit; // (2*5)-5 => 5
 //     for(let i = start; i < data.length; i++) {
@@ -110,3 +108,39 @@ export default function loadData() {
 //         results
 //     }
 // }
+
+// pengennya nanti hasilnya begini
+
+
+// for( let i = page; i <= limit; i++) { 
+//     for ( let j = startpage; j <= stop; j++)
+//         startpage+=5;
+//         return j;
+
+// }
+
+let page = 1;
+let limit = 5;
+
+if (req.query) {
+    if (req.query.page) {
+        page = req.query.page
+    }
+    if (req.query.limit) {
+        limit = req.query.limit
+    }
+}
+
+let res = [];
+const start = ((limit * page) - limit);
+const stop = limit * page;
+for (let i = 0; i < data.length; i++) {
+    if ((i >= (start)) && (i < stop)) {
+        res.push(data[i]);
+    }
+}
+return {
+    "results": res
+};
+
+}

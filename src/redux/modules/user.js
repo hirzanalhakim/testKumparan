@@ -39,9 +39,9 @@ export function isLoaded(globalState) {
   return globalState.info && globalState.info.loaded;
 }
 
-export function loadData() {
+export function loadData(page = 1) {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
-    promise: ({ client }) => client.get('/loadData')
+    promise: ({ client }) => client.get(`/loadData?page=${page}`)
   };
 }
