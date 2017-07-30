@@ -4,9 +4,6 @@ const LOAD_FAIL = 'redux-example/user/LOAD_FAIL';
 
 const initialState = {
   loaded: false
-  // data: {
-  //   results: []
-  // }
 };
 
 export default function user(state = initialState, action = {}) {

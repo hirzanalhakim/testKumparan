@@ -1,15 +1,3 @@
-// export default function loadData(req, res) {
-// console.log(req.query);
-// let page = 0;
-// let limit = 5;
-// if (req.query) {
-//     if (req.query.page) {
-//         page = req.query.page
-//     }
-//     if (req.query.limit) {
-//         limit = req.query.limit
-//     }
-// }
 export default function loadData(req) {
 
     const data =
@@ -86,38 +74,6 @@ export default function loadData(req) {
             "alamat": "Kesatrian I no 20, Tegal 52111 Jawa Tengah",
             "name": "Samsul"
         }]
-//     let result = [];
-//     let start = (page*limit)-limit; // (2*5)-5 => 5
-//     for(let i = start; i < data.length; i++) {
-
-//     }
-//         /* for(i = 0; i < data.length; i++){
-//             for(j = i; j <= i+; j++){
-//                 return.push(data[j])
-//             }
-//             return results
-
-//         } */
-
-//         // if (((i + 1) * limit) < data.length) {
-//         //     result.push(data[i]);
-//         // }
-//         i++;
-//     }
-//     return {
-//         results
-//     }
-// }
-
-// pengennya nanti hasilnya begini
-
-
-// for( let i = page; i <= limit; i++) { 
-//     for ( let j = startpage; j <= stop; j++)
-//         startpage+=5;
-//         return j;
-
-// }
 
 let page = 1;
 let limit = 5;
